@@ -1,3 +1,170 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/karla.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter.ttf');
+}
+
 body {
     margin: 0;
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;  
+}
+
+.container {
+    width: 550px;
+    height: 550px;
+    padding-left: 62px;
+    padding-top: 64px;
+    padding-right: 62px;
+    background-color: #1F2937;
+    text-align: left;
+}
+
+.header {
+    font-family: 'Karla';
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+}
+
+.header-box {
+    width: 354px;
+    height: 80px;
+}
+
+.text-highlight {
+    color: #10B981;
+}
+
+.text {
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.btn {
+    width: 191px 42px;
+    border-radius: 6px;
+    color: white;
+    background-color: #10B981;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15;
+    padding-right: 15px;
+    border: none;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.btn-div {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.hr {
+    width: 550px;
+    text-align: center;
+    height: 0px;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid #2F3E53;
+}
+
+.password-box {
+    display: flex;
+    gap: 150px;
+}
+
+.password-text {
+    background-color: #2F3E53;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+    height: 35px;
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+    color: #10B981;
+    padding-top: 15px;
+    margin-top: 40px;
+}
+
+.password-text:hover {
+    background-color: #10B981;
+    color: #2F3E53;
+    transition: color 0.5s ease;
+}
+
+.password-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.slider-group {
+    display: flex;
+    margin-top: 60px;
+    gap: 20px;
+
+}
+
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 30%;
+    height: 8px;  
+    background: #ddd; 
+    outline: none;
+    opacity: 0.7; 
+    transition: opacity .15s ease-in-out;
+    border-radius: 5px;
+    color: #10B981;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;  
+    width: 15px;  
+    height: 15px; 
+    background: #10B981;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background .15s ease-in-out;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider-statement {
+    width: 200px;
+    height: 50px;
+    background-color: none;
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #10B981;
+    border: none;
+    border-radius: 6px;
+}
+
+.copied-message {
+    display: none;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #10B981;
+    margin-top: 20px;
+}
+
+.toggle-options-group {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
 }

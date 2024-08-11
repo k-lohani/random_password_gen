@@ -3,7 +3,37 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1></h1>
+        <div class="container">
+            <div class="header-box">
+                <h1 class="header">Generate a <span class="text-highlight">random password</span></h1>
+            </div>
+            <p class="text">Never use an insecure password again</p>
+            <div class="slider-group">
+                <input type="range" id="password-length" class="slider" min="6" max="20" value="8" oninput="updateSliderValue(this.value)">
+                <div class="slider-statement">
+                    Password Length: <span id="slider-value">12</span> characters
+                </div>
+            </div>
+            <div class="toggle-options-group">
+                <div class="toggle-option">
+                    <input type="checkbox" id="toggle-symbols">
+                    <label for="toggle-symbols" class="slider-statement">Exclude Symbols</label>
+                </div>
+                <div class="toggle-option">
+                    <input type="checkbox" id="toggle-numbers">
+                    <label for="toggle-numbers" class="slider-statement">Exclude Numbers</label>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button class="btn" onclick="generate()">Generate Passwords</button>
+            </div>
+            <hr class="hr">
+            <div class="password-box">
+                <p onclick="clicktocopy('password-1')" class="password-text" id="password-1">OLaohandinfifns</p>
+                <p onclick="clicktocopy('password-2')" class="password-text" id="password-2">Lohani@12312312</p>
+            </div>
+            <span id="copy-confirmation" class="copied-message">Password copied to clipboard!</span>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
