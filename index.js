@@ -30,6 +30,8 @@ function generate() {
     const symbol_checkbox = document.getElementById('toggle-symbols')
     const number_checkbox = document.getElementById('toggle-numbers')
 
+    let charset = characters
+
     if (symbol_checkbox.checked && number_checkbox.checked === false) {
         charset = wo_symbols
     }
@@ -39,10 +41,6 @@ function generate() {
     else if (number_checkbox.checked && symbol_checkbox.checked) {
         charset = wo_numbers_symbols
     }
-    else {
-        charset = characters
-    }
-
 
     let password1 = ""
     let password2 = ""
@@ -55,3 +53,7 @@ function generate() {
     document.getElementById('password-2').textContent = password2
 
 }
+
+window.generate = generate;
+window.clicktocopy = clicktocopy;
+window.updateSliderValue = updateSliderValue;
