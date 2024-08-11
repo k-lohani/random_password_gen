@@ -1,6 +1,5 @@
 {
-  "name": "Scrim-s04k02i",
-  "description": "https://v2.scrimba.com/learn-javascript-c0v/~03f",
+  "name": "random_password_generator_v1.0",
   "scripts": {
     "start": "vite",
     "dev": "vite",
